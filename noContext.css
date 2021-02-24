@@ -1,0 +1,41 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+.context-menu {
+    z-index: 1000;
+    visibility: hidden;
+    position: absolute;
+    border: 1px solid #044688;
+    color: #044688;
+    background-color: white;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    width: 150px;
+    transition: max-height 0.5s ease-out;
+}
+
+.context-menu.show{
+    max-height: 500px;
+    visibility: visible;
+}
+
+.context-item{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.context-item:hover{
+    background-color: rgba(155, 156, 158, 0.2);
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}

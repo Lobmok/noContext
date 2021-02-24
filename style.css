@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.context-area-1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.context-area-2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: gold;
+}
